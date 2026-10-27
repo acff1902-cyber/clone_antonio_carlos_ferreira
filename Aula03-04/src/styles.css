@@ -1,0 +1,121 @@
+/* ==========================================================================
+   1. Configurações Gerais e Tipografia (Aula 05)
+   ========================================================================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   2. Cabeçalho Principal e Rodapé (Aula 03 e 05)
+   ========================================================================== */
+.cabecalho-principal {
+    background-color: #1976d2;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho-principal h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.rodape-pagina {
+    background-color: #0d47a1;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+}
+
+.rodape-pagina p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   3. Contentor Principal e Layout Flexbox (Blocos Lado a Lado)
+   ========================================================================== */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Layout em Flexbox para alinhar bloco-esquerda e bloco-direita lado a lado */
+.conteudo-principal {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Garante adaptabilidade a ecrãs mais pequenos */
+    margin-bottom: 40px;
+}
+
+.bloco-esquerda, 
+.bloco-direita {
+    flex: 1; /* Cada bloco ocupa largura igual */
+    min-width: 280px; /* Largura mínima para evitar sobreposição */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #1976d2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #0d47a1;
+    margin-top: 0;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+/* ==========================================================================
+   4. Estilização da Galeria de Imagens (Aula 03)
+   ========================================================================== */
+.galeria-imagens {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.galeria-imagens img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 6px;
+    margin: 10px 10px 10px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.galeria-imagens img:hover {
+    transform: scale(1.02); /* Efeito suave ao passar o cursor */
+}
+
+/* ==========================================================================
+   5. Estilização da Secção de Vídeos (Aula 04)
+   ========================================================================== */
+.seccao-videos {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.seccao-videos iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 6px;
+    margin: 15px 0;
+    display: block;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 e 04 - Estrutura Semântica e Media</title>
+   
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header class="cabecalho-principal">
+        <h1>Aula 03 e 04 de HTML</h1>
+    </header>
+
+    <!-- Conteúdo Principal da Página (Substitui divs genéricas) -->
+    <main>
+        <!-- Secção de Conteúdo e Divs Encadeadas -->
+        <section class="conteudo-principal">
+            <article class="bloco-esquerda">
+                <h2>Início das Aulas de DIV e Semântica</h2>
+                <p>Exemplo de organização de elementos dentro do layout.</p>
+            </article>
+
+            <article class="bloco-direita">
+                <h2>Estruturação de Layouts</h2>
+                <p>Uso correto de contentores semânticos para agrupar conteúdo.</p>
+            </article>
+        </section>
+
+        <!-- Secção para Imagens -->
+        <section class="galeria-imagens">
+            <h2>Galeria de Imagens</h2>
+            <!-- Imagem externa com texto alternativo descritivo -->
+            <img src="https://content.nationalgeographic.pt/medio/import/attachment/edicoesespeciais/VIAGENS/Escocia/e1.jpg" 
+                 alt="Nascer do sol nas montanhas da Escócia">
+
+            <!-- Imagem guardada na pasta local img/ conforme a Aula 03 e 05 -->
+            <img src="img/e1.jpg" 
+                 alt="Fotografia da paisagem da Escócia - National Geographic">
+        </section>
+
+        <!-- Secção para Vídeos Incorporados (iFrames) -->
+        <section class="seccao-videos">
+            <h2>Vídeos Demonstrativos</h2>
+
+            <iframe
+                width="800"
+                height="450"
+                src="https://www.youtube.com/embed/BxrLVldZtmg"
+                title="Tutorial sobre HTML5 e formulários"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+            <iframe
+                width="800"
+                height="450"
+                src="https://www.youtube.com/embed/foodZsZpaEI"
+                title="Comparativo CFMoto 450MT vs Moto Morini Alltrhike"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <!-- Rodapé no Final do Conteúdo -->
+    <footer class="rodape-pagina">
+        <p>&copy; 2026 - Aula de HTML5 e CSS</p>
+    </footer>
+
+</body>
+</html>

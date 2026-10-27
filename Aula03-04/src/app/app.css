@@ -1,0 +1,14 @@
+.header{
+min-height: 15vh;
+}
+.main {
+    background-color: rgb(45, 118, 9);
+}
+.esquerda {
+    background-color: aqua;
+    font-size: 4rem;
+}
+.direita {
+    background-color: brown;
+    font-size: 3rem;
+}
